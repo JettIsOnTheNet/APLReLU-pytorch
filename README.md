@@ -1,5 +1,5 @@
 # APReLU
-Adaptive Piecewise Linear activation function
+Adaptive Piecewise Linear activation function in pytorch
 
 ```
 
