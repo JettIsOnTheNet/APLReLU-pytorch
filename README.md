@@ -1,4 +1,4 @@
-# APReLU
+# APLReLU
 Adaptive Piecewise Linear activation function in pytorch
 
 ```
@@ -6,9 +6,9 @@ Adaptive Piecewise Linear activation function in pytorch
 import torch
 import torch.nn.functional as F
 
-class APReLU(torch.nn.Module):
+class APLReLU(torch.nn.Module):
     def __init__(self, num_parameters=2, init=0.25):
-        super(APReLU, self).__init__()
+        super(APLReLU, self).__init__()
         self.num_parameters = num_parameters
         self.weight = torch.nn.Parameter(torch.Tensor(num_parameters).fill_(init))
         self.bias = torch.nn.Parameter(torch.Tensor(num_parameters).zero_())
